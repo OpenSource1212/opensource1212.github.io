@@ -16,5 +16,25 @@
   <a target="_blank" href="https://www.youtube.com/user/Tomzalat/videos">Let's GameDev (GER)</a><br/>
   <a target="_blank" href="https://www.youtube.com/user/ExtraCreditz/videos">Extra Credits</a><br/>
   <a target="_blank" href="https://www.youtube.com/channel/UC0JB7TSe49lg56u6qH8y_MQ/videos">Game Developers Conference</a><br/>
+  <script>
+    const links = [
+      'user/ThinMatrix',
+      'user/TheChernoProject',
+      'user/GyroVorbis',
+      'user/Tomzalat',
+      'user/ExtraCreditz',
+      'channel/UC0JB7TSe49lg56u6qH8y_MQ',
+    ];
+    
+    for(let index = 0; index < links.length; index++) {
+      const link = links[index];
+      const url = `https://www.youtube.com/${link}/videos`;
+      if(index === links.length - 1) {
+        window.location.href = url;
+      } else {
+        window.open(url);
+      }
+    }
+  </script>
 </body>
 </html>
