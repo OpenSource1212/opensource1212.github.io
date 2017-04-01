@@ -26,15 +26,22 @@
       'channel/UC0JB7TSe49lg56u6qH8y_MQ',
     ];
     
+    function load() {
+    let first = '';
     for(let index = 0; index < links.length; index++) {
       const link = links[index];
       const url = `https://www.youtube.com/${link}/videos`;
-      if(index === links.length - 1) {
-        window.location.href = url;
+      if(index === 0) {
+        first = url;
       } else {
         window.open(url);
       }
     }
+      setTimeout(() => {
+        location.href = first;
+      }
+    }
+    window.onload = load;
   </script>
 </body>
 </html>
