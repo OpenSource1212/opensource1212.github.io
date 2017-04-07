@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>YouTube Channels</h1>
-  <input type="button" value="Open">
+  <input type="button" value="Open" id="open-button">
   <a target="_blank" href="https://www.youtube.com/user/ThinMatrix/videos">Thin Matrix</a><br/>
   <a target="_blank" href="https://www.youtube.com/user/TheChernoProject/videos">The Cherno</a><br/>
   <a target="_blank" href="https://www.youtube.com/user/GyroVorbis/videos">Elysian Shadows</a><br/>
@@ -34,6 +34,8 @@
     function openAllTabs() {
       links.forEach(l => window.open(buildPath(l));
     }
+                    
+    document.querySelector('#open-button').addEventListener('click', openAllTabs);
     
 //     function load() {
 //     let first = '';
